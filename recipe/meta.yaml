@@ -1,8 +1,8 @@
 {% set name = "satpy" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "dd32fb36b2eb60c7d845b465f2ce26f1850869816388493b0be9cc8586e546f9" %}
+{% set hash_value = "da2ea644643ee5ccc63d259dcad9a13a813fa968692c5ea21cb7e125bce68353" %}
 
 package:
   name: '{{ name|lower }}'
