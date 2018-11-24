@@ -1,8 +1,8 @@
 {% set name = "satpy" %}
-{% set version = "0.9.4" %}
+{% set version = "0.10.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "5bf73a870f886449a5ac1412dea2c3df6c185bba833bb87d0e7e0bb9187b758a" %}
+{% set hash_value = "fd8d6c11c643fcf121e500e13e95aa3e22e495eb2718ea7a0fc6a8b2d7b358d6" %}
 
 package:
   name: '{{ name|lower }}'
@@ -27,7 +27,7 @@ requirements:
     - python
     - numpy >=1.4.1
     - pillow
-    - pyresample >=1.10.0
+    - pyresample >=1.10.3
     - trollsift
     - trollimage >=1.5.1
     - pykdtree
@@ -38,6 +38,7 @@ requirements:
     - h5py
     - netcdf4
     - pyspectral
+    - pyorbital
 
 test:
   imports:
