@@ -27,7 +27,7 @@ requirements:
     - python
     - numpy >=1.4.1
     - pillow
-    - pyresample >=1.10.0
+    - pyresample >=1.10.3
     - trollsift
     - trollimage >=1.5.1
     - pykdtree
@@ -38,6 +38,7 @@ requirements:
     - h5py
     - netcdf4
     - pyspectral
+    - pyorbital
 
 test:
   imports:
