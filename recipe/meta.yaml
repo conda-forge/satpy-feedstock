@@ -23,6 +23,8 @@ requirements:
     - python
     - pip
     - setuptools
+    - setuptools_scm
+    - setuptools_scm_git_archive
   run:
     - python
     - numpy >=1.4.1
