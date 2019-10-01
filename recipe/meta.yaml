@@ -1,8 +1,8 @@
 {% set name = "satpy" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "ae42559a3b4fe9623e512985e01fe0986c0fa4d7443ea705aaa45d1f5072fb0a" %}
+{% set hash_value = "422bd812399a4888e865db30ad394675c594e8a8d5075152ec0ee8c70f4cbad6" %}
 
 package:
   name: '{{ name|lower }}'
@@ -16,7 +16,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
