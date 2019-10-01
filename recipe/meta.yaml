@@ -39,6 +39,7 @@ requirements:
     - netcdf4
     - pyspectral
     - pyorbital
+    - zarr
 
 test:
   imports:
