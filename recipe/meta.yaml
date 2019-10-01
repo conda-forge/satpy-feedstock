@@ -56,10 +56,8 @@ test:
     - satpy.writers
   requires:
     - behave
-    - h5py
     - imageio
     - libtiff
-    - netcdf4
     - pyhdf
     - mock  # [py==27]
 
