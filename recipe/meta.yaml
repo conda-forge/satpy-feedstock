@@ -10,20 +10,19 @@ source:
   sha256: 13a30747589ed9ea5e4c60a51b6819b72ed1015696b5106b48390bfd4bd5b6a3
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python
+    - python >=3.6
     - numpy >=1.4.1
     - pillow
     - pyresample >=1.10.3
@@ -46,17 +45,7 @@ test:
     - satpy.composites
     - satpy.enhancements
     - satpy.readers
-    - satpy.tests
-    - satpy.tests.compositor_tests
-    - satpy.tests.reader_tests
-    - satpy.tests.writer_tests
     - satpy.writers
-  requires:
-    - behave
-    - imageio
-    - libtiff
-    - pyhdf
-    - mock  # [py==27]
 
 about:
   home: https://github.com/pytroll/satpy
