@@ -5,9 +5,13 @@ Home: https://github.com/pytroll/satpy
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/satpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Meteorological processing package
+
+Development: https://github.com/pytroll/satpy
+
+Documentation: http://satpy.readthedocs.io/en/latest/
 
 Python package for reading and manipulating meteorological remote
 sensing data and writing it to various image and data file formats.
