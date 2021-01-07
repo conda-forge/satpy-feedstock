@@ -28,8 +28,6 @@ requirements:
     - pyresample >=1.10.3
     - trollsift
     - trollimage >=1.5.1
-    - pykdtree
-    - six
     - pyyaml
     - xarray >=0.10.1
     - dask >=0.17.1
