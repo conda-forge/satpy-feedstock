@@ -36,6 +36,8 @@ requirements:
     - pyspectral
     - pyorbital
     - zarr
+    - donfig
+    - appdirs
 
 test:
   imports:
