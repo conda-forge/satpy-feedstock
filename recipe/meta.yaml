@@ -1,5 +1,5 @@
 {% set name = "satpy" %}
-{% set version = "0.26.0" %}
+{% set version = "0.27.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a48eb1446247f25ec76d2467e88391dc37cc13cccd0787ca283cc33a59b96ff
+  sha256: 95d4a3e546f423fc33b91d40d0f6b15437508f9aa28855e52dca2af7a3413436
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy >=1.4.1
     - pillow
     - pyresample >=1.10.3
