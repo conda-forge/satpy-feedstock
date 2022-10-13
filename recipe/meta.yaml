@@ -10,7 +10,7 @@ source:
   sha256: 406a95e2bcad8ccf4b30b8d8b53b312217043fc096b80c973d7444c434eb596b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >=3.7
+    - python >=3.8
     - numpy >=1.4.1
     - pillow
     - pyresample >=1.10.3
