@@ -39,6 +39,7 @@ requirements:
     - donfig
     - appdirs
     - pooch
+    - pyproj
 
 test:
   imports:
