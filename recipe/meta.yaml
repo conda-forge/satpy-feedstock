@@ -1,5 +1,5 @@
 {% set name = "satpy" %}
-{% set version = "0.37.1" %}
+{% set version = "0.38.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 406a95e2bcad8ccf4b30b8d8b53b312217043fc096b80c973d7444c434eb596b
+  sha256: 79371f78bc4d9d64470b4266f0a079ac6900f86173d391820fe86bd6c93f3f94
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -39,6 +39,7 @@ requirements:
     - donfig
     - appdirs
     - pooch
+    - pyproj
 
 test:
   imports:
