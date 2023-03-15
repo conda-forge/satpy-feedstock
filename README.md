@@ -1,11 +1,11 @@
-About satpy
-===========
+About satpy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/satpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pytroll/satpy
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/satpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Meteorological processing package
 
