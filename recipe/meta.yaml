@@ -36,7 +36,7 @@ requirements:
     - pyorbital
     - zarr
     - donfig
-    - appdirs
+    - platformdirs
     - pooch
     - pyproj
 
