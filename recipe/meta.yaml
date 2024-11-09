@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python 3.9
+    - python 3.10
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.9
+    - python >=3.10
     - numpy >=1.21.0
     - pillow
     - pyresample >=1.10.3
