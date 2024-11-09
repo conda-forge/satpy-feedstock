@@ -1,13 +1,13 @@
 {% set name = "satpy" %}
-{% set version = "0.52.1" %}
+{% set version = "0.53.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4e7d1e8e0c22ff633ddcf576de296040417290f1ff1bce8cfae0fd602a5f8940
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: cc0eb12462b2f1eda271c3456b158b7bd55287b686c57aa9454aff4aed64070b
 
 build:
   number: 0
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python 3.10
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.9
+    - python >=3.10
     - numpy >=1.21.0
     - pillow
     - pyresample >=1.10.3
