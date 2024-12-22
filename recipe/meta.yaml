@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "satpy" %}
 {% set version = "0.53.0" %}
 
@@ -10,18 +11,18 @@ source:
   sha256: cc0eb12462b2f1eda271c3456b158b7bd55287b686c57aa9454aff4aed64070b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python 3.10
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.21.0
     - pillow
     - pyresample >=1.10.3
@@ -41,6 +42,8 @@ requirements:
     - pyproj
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - satpy
     - satpy.composites
