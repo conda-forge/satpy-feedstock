@@ -11,7 +11,7 @@ source:
   sha256: 76452bf74bb25a83b128fae892bab93a547c125c452aa3d24008c225e85dfc4b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -25,11 +25,11 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.21.0
     - pillow
-    - pyresample >=1.10.3
+    - pyresample >=1.24.0
     - trollsift
-    - trollimage >=1.5.1
+    - trollimage >=1.24.0
     - pyyaml
-    - xarray >=0.10.1
+    - xarray >=0.14.1
     - dask >=0.17.1
     - h5py
     - netcdf4
