@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "satpy" %}
-{% set version = "0.57.0" %}
+{% set version = "0.58.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9cf6c3fa856184ffbf5c118626c4ced57ab09184d6aa126e05413c3e67375356
+  sha256: f054fb8343595b758ddd73eaec4d1e417057fc531134697ce491714f2b727d03
 
 build:
   number: 0
