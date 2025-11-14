@@ -11,7 +11,7 @@ source:
   sha256: 22b322d9bf28a6214beaca6906c2e0c99c663386516a4528c5533cf2fe8c2dbe
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -40,6 +40,7 @@ requirements:
     - platformdirs
     - pooch
     - pyproj
+    - universal_pathlib
 
 test:
   requires:
