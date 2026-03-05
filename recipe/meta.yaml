@@ -23,7 +23,7 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - numpy >=1.21.0
+    - numpy >=2.0.0
     - pillow
     - pyresample >=1.24.0
     - trollsift
