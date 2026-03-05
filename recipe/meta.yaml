@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "satpy" %}
-{% set version = "0.59.0" %}
+{% set version = "0.60.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 22b322d9bf28a6214beaca6906c2e0c99c663386516a4528c5533cf2fe8c2dbe
+  sha256: 618af895696247b048f27ed58588eb581593ee164a72db6aa5b368c783ddddb1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -23,7 +23,7 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - numpy >=1.21.0
+    - numpy >=2.0.0
     - pillow
     - pyresample >=1.24.0
     - trollsift
