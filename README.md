@@ -156,6 +156,3 @@ Feedstock Maintainers
 * [@mraspaud](https://github.com/mraspaud/)
 * [@pnuu](https://github.com/pnuu/)
 
-
-<!-- dummy commit to enable rerendering -->
-
